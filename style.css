@@ -55,7 +55,7 @@ tbody {
 .label-banner {
     padding: 40px;
     text-align: center;
-    background: #211f15 url(img/group1.jpg) no-repeat;
+    background: #211f15 url(https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/group1.jpg) no-repeat;
     background-size: cover;
     background-position: -250px;
 }

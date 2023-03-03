@@ -5,13 +5,266 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <title>Хата плюс</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        * {
+            max-width: 600px;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        table,
+        tbody {
+            display: block;
+        }
+
+        .header {
+            margin-top: 11px;
+            margin-bottom: 24px;
+        }
+
+        .logo td {
+            margin: 10px;
+        }
+
+        .phone {
+            text-align: right;
+            padding-left: 128px;
+        }
+
+        .phone a {
+            color: #25252c;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Arial";
+            text-decoration: none;
+        }
+
+        .phone img {
+            padding-right: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .phone p {
+            color: #9999a6;
+            font-size: 13px;
+            font-style: italic;
+            font-family: "Arial";
+            text-align: right;
+        }
+
+        .label-banner {
+            padding: 40px;
+            text-align: center;
+            background: #211f15 url(https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/group1.jpg) no-repeat;
+            background-size: cover;
+            background-position: -250px;
+        }
+
+
+        .label-banner h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Roboto Slab', serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .label-banner p {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "Arial";
+            text-align: center;
+        }
+
+        .price b,
+        .label-banner td h2 {
+            color: #fd8300;
+            font-size: 24px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .label-banner span {
+            font-size: 40px;
+        }
+
+        .label-banner sup {
+            font-size: 14px;
+        }
+
+        .main h2 {
+            color: #24242b;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Arial";
+        }
+
+        .main p {
+            color: #666;
+            font-size: 14px;
+            font-family: "Arial";
+            line-height: 24px;
+        }
+
+        .main a {
+            padding: 12px 20px 12px 20px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: "Arial";
+            background: #fd8300;
+            border-radius: 21px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 30px;
+            margin-top: 40px;
+            background: #f5f5f5;
+        }
+
+        .content tr {
+            margin-right: 10px;
+        }
+
+        .content th {
+            color: #24242b;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: "Arial";
+            text-align: center;
+        }
+
+        .content td {
+            color: #666;
+            font-size: 13px;
+            font-family: "Arial";
+            text-align: center;
+        }
+
+        .homes {
+            padding: 30px;
+        }
+
+        .home {
+            color: #1f1f56;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Arial";
+        }
+
+        .home-par {
+            color: #9999a6;
+            font-size: 13px;
+            font-family: "Arial";
+        }
+
+        hr {
+            border-color: #ffffff;
+        }
+
+        .footer-before {
+            background: url(https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/container.png?raw=true);
+        }
+
+
+        .footer-before h2 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Arial";
+            text-align: center;
+        }
+
+        .footer-before td {
+            text-align: center;
+            padding-left: 104px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        .footer-before p {
+            color: #ffffff;
+            font-size: 13px;
+            font-family: "Arial";
+            line-height: 20px;
+        }
+
+        .action {
+            padding-bottom: 17px;
+        }
+
+        .footer-before a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: "Arial";
+            background: #1f1f56;
+            border-radius: 40px;
+            padding: 13px;
+            text-decoration: none;
+        }
+
+        .footer {
+            background: #08081a;
+        }
+
+        .footer p {
+            color: #9999a6;
+            font-size: 13px;
+            font-family: "Arial";
+            text-align: center;
+        }
+
+        .footer tbody {
+            padding: 11px;
+        }
+
+        .footer td {
+            padding-left: 140px;
+        }
+
+        .footer-hyperlink {
+            background: #000014;
+        }
+
+        .footer-hyperlink td {
+            padding-left: 215px;
+        }
+
+        .footer-hyperlink a {
+            color: #fd8300;
+            font-size: 11px;
+            font-family: "Arial";
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .homeimg {
+            padding-right: 18px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,9 +273,13 @@
             <td>
                 <table class="header">
                     <tr>
-                        <td class="logo"><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/logo.png" alt="logo"></td>
+                        <td class="logo"><img
+                                src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/logo.png"
+                                alt="logo"></td>
                         <td class="phone">
-                            <a href="tel:+380971002525"><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/phone.png" alt="phone">+38(097)100-25-25</a>
+                            <a href="tel:+380971002525"><img
+                                    src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/phone.png"
+                                    alt="phone">+38(097)100-25-25</a>
                             <p>Контактний телефон у Вашому місті</p>
                         </td>
                     </tr>
@@ -63,9 +320,12 @@
     </table>
     <table class="content">
         <tr>
-            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path2.png" alt="path1"></th>
-            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path.png" alt="path2"></th>
-            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path3.png" alt="path3"></th>
+            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path2.png"
+                    alt="path1"></th>
+            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path.png"
+                    alt="path2"></th>
+            <th><img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/composite_path3.png"
+                    alt="path3"></th>
         </tr>
         <tr>
             <th>
@@ -94,8 +354,9 @@
     <table class="homes">
         <div class="wrapper">
             <tr>
-                <td>
-                    <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves2.jpg" alt="#">
+                <td class="homeimg">
+                    <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves2.jpg"
+                        alt="#">
                 </td>
                 <td>
                     <h2 class="home">MONTREAL (332 м<sup>2</sup>)</h2>
@@ -107,7 +368,7 @@
                 </td>
             </tr>
     </table>
-            <hr>
+    <hr>
     <table class="homes">
         <tr>
 
@@ -120,16 +381,18 @@
                 <p class="home-par">Кількість спалень: 4</p>
                 <p class="home-par">Гараж: 2 авто</p>
             </td>
-            <td>
-                <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves1.jpg" alt="#">
+            <td class="homeimg">
+                <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves1.jpg"
+                    alt="#">
             </td>
         </tr>
     </table>
     <hr>
     <table class="homes">
         <tr>
-            <td>
-                <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves3.jpg" alt="#">
+            <td class="homeimg">
+                <img src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/curves3.jpg"
+                    alt="#">
             </td>
             <td>
                 <h2 class="home">CALGARY (294 м<sup>2</sup>)</h2>
@@ -155,14 +418,30 @@
     <table class="footer">
         <tr>
             <td>
-                <a href="#" class="tw"><img src="img/tw.png" alt="#"></a>
-                <a href="#" class="f"><img src="img/f.png" alt="#"></a>
-                <a href="#" class="wf"><img src="img/wf.png" alt="#"></a>
-                <a href="#" class="p"><img src="img/p.png" alt="#"></a>
-                <a href="#" class="g+"><img src="img/g+.png" alt="#"></a>
-                <a href="#" class="b"><img src="img/b.png" alt="#"></a>
-                <a href="#" class="in"><img src="img/in.png" alt="#"></a>
-                <a href="#" class="da"><img src="img/da.png" alt="#"></a>
+                <a href="#" class="tw"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/tw.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="f"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/f.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="wf"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/wf.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="p"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/p.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="g+"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/g+.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="b"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/b.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="in"><img
+                        src="https://github.com/kostyantinkaschko/hatapluslatter/blob/master/img/in.png?raw=true"
+                        alt="#"></a>
+                <a href="#" class="da"><img
+                        src="https://raw.githubusercontent.com/kostyantinkaschko/hatapluslatter/master/img/da.png"
+                        alt="#"></a>
             </td>
         </tr>
         <tr>
@@ -170,14 +449,14 @@
                 <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
             </td>
         </tr>
-        <table class="footer-hyperlink">
-            <tr>
-                <td>
-                    <a href="#">Перейти на сайт | </a>
-                    <a href="#">Відписатися</a>
-                </td>
-            </tr>
-        </table>
+    </table>
+    <table class="footer-hyperlink">
+        <tr>
+            <td>
+                <a href="#">Перейти на сайт | </a>
+                <a href="#">Відписатися</a>
+            </td>
+        </tr>
     </table>
     <div class="clear"></div>
     </div>
