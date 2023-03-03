@@ -163,3 +163,79 @@ tbody {
 hr {
     border-color: #ffffff;
 }
+
+.footer-before {
+    background: url(img/container.png);
+}
+
+
+.footer-before h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.footer-before td {
+    text-align: center;
+    padding-left: 104px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-before p {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 20px;
+}
+
+.action {
+    padding-bottom: 17px;
+}
+
+.footer-before a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Arial";
+    background: #1f1f56;
+    border-radius: 40px;
+    padding: 13px;
+}
+
+.footer {
+    background: #08081a;
+}
+
+.footer p {
+    color: #9999a6;
+    font-size: 13px;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.footer tbody {
+    padding: 11px;
+}
+
+.footer td {
+    padding-left: 140px;
+}
+
+.footer-hyperlink {
+    background: #000014;
+}
+
+.footer-hyperlink td {
+    padding-left: 215px;
+}
+
+.footer-hyperlink a {
+    color: #fd8300;
+    font-size: 11px;
+    font-family: "Arial";
+    text-align: center;
+    text-decoration: none;
+}
